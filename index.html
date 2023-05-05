@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
     Plain-Academic by Vasilios Mavroudis
@@ -29,6 +28,32 @@
     
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Crimson Text', serif;
+    }
+
+    .publication-list li {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid black;
+      background-color: white;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      transition: all 0.2s ease-in-out;
+    }
+  
+    .publication-list li:hover {
+      background-color: #F5F5F5;
+      transform: translateY(-2px);
+      box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
+    }
+  
+    .publication-list li h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+  
+    .publication-list li p {
+      margin-top: 3px;
+      margin-bottom: 3px;
     }
 
   </style>
@@ -77,48 +102,46 @@
 
     <div class="container" style="margin-top: 80px">
 
-        <div class="row">
+            <div class="row">
 
-            <!-- Introduction Column -->
-            <div class="col-md-8">
-                
-                <!-- Personal Image -->
-                <div class="col-md-5">
-                <img class="img-responsive" src="files/IMG_2714.png" alt="Me in the Sun Moon Lake">
+              <!-- Contact Info on the Sidebar -->
+              <div class="col-md-4">
+
+                <div style="text-align: left;">
+                  <img src="files/IMG_2714-modified.png" alt="Profile Picture" style="width: 160px; height: 160px;">
                 </div>
-                
-                
-                <div class="col-md-7" style="text-align:justify; ">
-                    <p>I am a postdoctoral researcher in the Health Informatics Research Lab at Drexel University College of Computing & Informatics. My research interests include data mining, text mining, and health informatics, focusing on using data to solve problems in the healthcare area. I received my Ph.D. in information management from the National Sun Yat-sen University in July 2021, advised by Dr. San-Yih Hwang. I was a visiting student in the college of computing & informatics at Drexel University from February 2020 to January 2021.
-                    </p>                
-                </div>
-
-            </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: Crimson Text, sans-serif; font-size: 24px;"><b>Chia-Hsuan Chang 張家瑄</b></div><br> 
+                <div style="font-family: Crimson Text, sans-serif; font-size: 18px;"><b>Chia-Hsuan Chang 張家瑄</b></div><br>
+        
                 <p><b>shane.chang.tw AT gmail.com</b>
-                
+                </p>
+
                 <p> PostDoctoral Researcher <br>
                     Healthcare Informatics Research Lab <br>
                     Drexel CCI 
-                <!-- PhD, Information Management<br>
-                National Sun Yat-sen University<br>
-                Kaoshiung, Taiwan<br> -->
                 </p>
+
                 <a style="color:#333;" href="https://www.linkedin.com/in/chia-hsuan-chang/" target="_blank"><img src="icons/icons8-linkedin-50.png" width="30" height="30"></a>
                 &nbsp;
                 <a style="color:#333;" href="https://scholar.google.com/citations?user=YJS1PMgAAAAJ&hl=en" target="_blank"><img src="icons/icons8-google-scholar-50.png" width="30" height="30"></a>
                 &nbsp;
                 <a style="color:#333;" href="https://github.com/ponshane" target="_blank"><img src="icons/icons8-github-50.png" width="30" height="30"></a>
-            </div>
+                <p style="color:#0a0b0b;font-size:1.0em; text-align:left; margin-top: 10px;">Last Update: March, 2023</p>
+              </div>
+
+            <!-- Introduction Column -->
+            <div class="col-md-8">
+                
+                <h2>About</h2>
+                <p align="justify">I am a postdoctoral researcher in the Health Informatics Research Lab at Drexel University College of Computing & Informatics. My research interests include data mining, text mining, and health informatics, focusing on using data to solve problems in the healthcare area. I received my Ph.D. in information management from the National Sun Yat-sen University in July 2021, advised by Dr. San-Yih Hwang. I was a visiting student in the college of computing & informatics at Drexel University from February 2020 to January 2021.
+                </p> 
+
+            </div> 
 
             <!-- Publications -->
             <div class="col-md-8" style="text-align:justify; ">    
                 <h2 id="publications">Publications</h2>
                 <h3>Journal</h3>
-                <ol>
+                <ol class="publication-list">
                     <li class="paper" words=""><a href="https://doi.org/10.1016/j.elerap.2023.101254">On bridging consumer health search across languages using cross-lingual word space</a> </br><b>Chia-Hsuan Chang</b> and Christopher Yang </br>Electronic Commerce Research and Applications (ECRA), 2023</li>
                     <li class="paper" words=""><a href="https://www.jmir.org/2021/10/e30765/">Topics and Sentiments of Public Concerns Regarding COVID-19 Vaccines: Social Media Trend Analysis</a> </br>Michal Monselise, <b>Chia-Hsuan Chang</b>, Gustavo Ferreira, Rita Yang, Christopher Yang </br>Journal of Medical Internet Research (JMIR), 2021</li>
                     <li class="paper" words=""><a href="https://link.springer.com/article/10.1007/s10115-021-01555-7">A word embedding-based approach to cross-lingual topic modeling</a> </br><b>Chia-Hsuan Chang</b> and San-Yih Hwang </br>Knowledge and Information Systems (KAIS), 2021</li>
@@ -126,7 +149,7 @@
                     <li class="paper" words=""><a href="https://link.springer.com/article/10.1007/s41666-020-00083-3">What Are People Concerned About During the Pandemic? Detecting Evolving Topics about COVID-19 from Twitter.</a> </br><b>Chia-Hsuan Chang</b>, Michal Monselise, and Christopher Yang </br>Journal of Healthcare Informatics Research (JHIR), 2021</li>
                 </ol>
                 <h3>Conference/Workshop/Preprint</h3>
-                <ol>
+                <ol class="publication-list">
                     <li class="paper" words=""><a href="">Prompting for Few-shot Adverse Drug Reaction Recognition from Online Reviews</a> </br><b>Chia-Hsuan Chang</b>, Fang-Yu Chang, and San-Yih Hwang </br>IEEE International Conference on Healthcare Informatics (ICHI), 2023</li>
                     <li class="paper" words=""><a href="https://arxiv.org/abs/2206.11612">Constructing Cross-lingual Consumer Health Vocabulary with Word-Embedding from Comparable User Generated Content</a> </br><b>Chia-Hsuan Chang</b>, Lei Wang, Christopher Yang </br>arXiv, 2022</li>
                     <li class="paper" words=""><a href="https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/pra2.229">Employing word mover's distance for cross‐lingual plagiarized text detection</a> </br>Chia‐Ming Chang, <b>Chia-Hsuan Chang</b>, San‐Yih Hwang </br>Proceedings of the Association for Information Science and Technology, 2020</li>
@@ -140,9 +163,6 @@
 
     </div>
     <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <p style="color:#0a0b0b;font-size:1.0em; text-align:center;">Last Update: March, 2023</p>
 
   </body>
 
