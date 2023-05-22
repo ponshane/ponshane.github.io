@@ -17,46 +17,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <!-- <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'> -->
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
-  <style>
-
-    body {
-        font-family: 'Work Sans', sans-serif; font-size: 1.5em; margin-bottom: 40px;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Crimson Text', serif;
-    }
-
-    .publication-list li {
-      margin-bottom: 10px;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid black;
-      background-color: white;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-      transition: all 0.2s ease-in-out;
-    }
   
-    .publication-list li:hover {
-      background-color: #F5F5F5;
-      transform: translateY(-2px);
-      box-shadow: 2px 4px 6px rgba(0,0,0,0.3);
-    }
-  
-    .publication-list li h4 {
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-  
-    .publication-list li p {
-      margin-top: 3px;
-      margin-bottom: 3px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGPNKVMG6Q"></script>
@@ -69,7 +32,6 @@
   </script>
 
 </head>
-<!-- <body style="font-family: 'Roboto', serif; font-size: 1.5em; margin-bottom: 40px"> -->
 
 <body>
 
@@ -87,12 +49,10 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="">Home</a></li>
-				  <!-- <li><a href="#projects">Projects</a></li> -->
-				  <li><a href="#publications">Publications</a></li> 
-				  <li><a href="files/ChiaHsuanChang_CV_20220915.pdf" target="_blank">CV</a></li> 
-			  	  <!-- <li><a href="teaching">Teaching</a></li> -->
+		  <ul class="nav navbar-nav" id="js-navigation">
+				  <li><a href="about.html">Home</a></li>
+				  <li><a href="publications.html">Publications</a></li> 
+				  <li><a href="cv.html">CV</a></li> 
 		  </ul>
 		</div>
 	  </div>
@@ -110,59 +70,46 @@
                 <div style="text-align: left;">
                   <img src="files/IMG_2714-modified.png" alt="Profile Picture" style="width: 160px; height: 160px;">
                 </div>
-                <div style="font-family: Crimson Text, sans-serif; font-size: 18px;"><b>Chia-Hsuan Chang 張家瑄</b></div><br>
-        
-                <p><b>shane.chang.tw AT gmail.com</b>
-                </p>
+                <div style="font-family: 'Crimson Text'; font-size: 18px; margin-top: 10px">Chia-Hsuan Chang (張家瑄)</div><br>
 
                 <p> PostDoctoral Researcher <br>
                     Healthcare Informatics Research Lab <br>
                     Drexel CCI 
                 </p>
 
+                <p>shane.chang.tw AT gmail.com
+                </p>
+                
                 <a style="color:#333;" href="https://www.linkedin.com/in/chia-hsuan-chang/" target="_blank"><img src="icons/icons8-linkedin-50.png" width="30" height="30"></a>
                 &nbsp;
                 <a style="color:#333;" href="https://scholar.google.com/citations?user=YJS1PMgAAAAJ&hl=en" target="_blank"><img src="icons/icons8-google-scholar-50.png" width="30" height="30"></a>
                 &nbsp;
                 <a style="color:#333;" href="https://github.com/ponshane" target="_blank"><img src="icons/icons8-github-50.png" width="30" height="30"></a>
-                <p style="color:#0a0b0b;font-size:1.0em; text-align:left; margin-top: 10px;">Last Update: March, 2023</p>
+                <p style="margin-top: 10px;"><i>Last Update: May, 2023</i></p>
               </div>
 
-            <!-- Introduction Column -->
-            <div class="col-md-8">
-                
-                <h2>About</h2>
-                <p align="justify">I am a postdoctoral researcher in the Health Informatics Research Lab at Drexel University College of Computing & Informatics. My research interests include data mining, text mining, and health informatics, focusing on using data to solve problems in the healthcare area. I received my Ph.D. in information management from the National Sun Yat-sen University in July 2021, advised by Dr. San-Yih Hwang. I was a visiting student in the college of computing & informatics at Drexel University from February 2020 to January 2021.
-                </p> 
-
-            </div> 
-
-            <!-- Publications -->
-            <div class="col-md-8" style="text-align:justify; ">    
-                <h2 id="publications">Publications</h2>
-                <h3>Journal</h3>
-                <ol class="publication-list">
-                    <li class="paper" words=""><a href="https://doi.org/10.1016/j.elerap.2023.101254">On bridging consumer health search across languages using cross-lingual word space</a> </br><b>Chia-Hsuan Chang</b> and Christopher Yang </br>Electronic Commerce Research and Applications (ECRA), 2023</li>
-                    <li class="paper" words=""><a href="https://www.jmir.org/2021/10/e30765/">Topics and Sentiments of Public Concerns Regarding COVID-19 Vaccines: Social Media Trend Analysis</a> </br>Michal Monselise, <b>Chia-Hsuan Chang</b>, Gustavo Ferreira, Rita Yang, Christopher Yang </br>Journal of Medical Internet Research (JMIR), 2021</li>
-                    <li class="paper" words=""><a href="https://link.springer.com/article/10.1007/s10115-021-01555-7">A word embedding-based approach to cross-lingual topic modeling</a> </br><b>Chia-Hsuan Chang</b> and San-Yih Hwang </br>Knowledge and Information Systems (KAIS), 2021</li>
-                    <li class="paper" words=""><a href="https://www.sciencedirect.com/science/article/abs/pii/S1567422321000090">Learning bilingual sentiment lexicon for online reviews.</a> </br><b>Chia-Hsuan Chang</b>, San-Yih Hwang, and Ming-Lun Wu </br>Electronic Commerce Research and Applications (ECRA), 2021</li>
-                    <li class="paper" words=""><a href="https://link.springer.com/article/10.1007/s41666-020-00083-3">What Are People Concerned About During the Pandemic? Detecting Evolving Topics about COVID-19 from Twitter.</a> </br><b>Chia-Hsuan Chang</b>, Michal Monselise, and Christopher Yang </br>Journal of Healthcare Informatics Research (JHIR), 2021</li>
-                </ol>
-                <h3>Conference/Workshop/Preprint</h3>
-                <ol class="publication-list">
-                    <li class="paper" words=""><a href="">Prompting for Few-shot Adverse Drug Reaction Recognition from Online Reviews</a> </br><b>Chia-Hsuan Chang</b>, Fang-Yu Chang, and San-Yih Hwang </br>IEEE International Conference on Healthcare Informatics (ICHI), 2023</li>
-                    <li class="paper" words=""><a href="https://arxiv.org/abs/2206.11612">Constructing Cross-lingual Consumer Health Vocabulary with Word-Embedding from Comparable User Generated Content</a> </br><b>Chia-Hsuan Chang</b>, Lei Wang, Christopher Yang </br>arXiv, 2022</li>
-                    <li class="paper" words=""><a href="https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/pra2.229">Employing word mover's distance for cross‐lingual plagiarized text detection</a> </br>Chia‐Ming Chang, <b>Chia-Hsuan Chang</b>, San‐Yih Hwang </br>Proceedings of the Association for Information Science and Technology, 2020</li>
-                    <li class="paper" words=""><a href="https://ieeexplore.ieee.org/abstract/document/8818222">An approach to cross-lingual sentiment lexicon construction</a> </br><b>Chia-Hsuan Chang</b>, Ming-Lun Wu, San-Yih Hwang </br>IEEE International Congress on Big Data (BigDataCongress), 2019</li>
-                    <li class="paper" words=""><a href="https://ieeexplore.ieee.org/abstract/document/8457726">Incorporating Word Embedding into Cross-Lingual Topic Modeling</a> </br><b>Chia-Hsuan Chang</b>, San-Yih Hwang, Tou-Hsiang Xui </br>IEEE International Congress on Big Data (BigDataCongress), 2018</li>
-                </ol>
+            <!-- Content Column -->
+            <div class="col-md-8" id="js-content">
+                <!-- This section will be dynamically updated with specific content -->
             </div>
 
         </div>
 
 
     </div>
-    <!-- /.container -->
+    
+    <!-- the following js code require jQuery -->
+    <!-- the script dynamically load the html content -->
+    <script>
+      $(document).ready(function() {
+        $('#js-content').load('about.html');
+    
+        $('#js-navigation a').click(function(e) {
+          e.preventDefault();
+          $("#js-content").load(e.target.href);
+        })
+      });
+    </script>
 
   </body>
 
