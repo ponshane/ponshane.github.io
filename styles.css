@@ -3,9 +3,21 @@
     .container h1, h2, h3, h4, h5, h6 {
         font-family: 'Crimson Text';
     }
+    
+    #personalPhoto {
+      text-align: center;
+    }
+
+    #myName {
+      font-family: 'Crimson Text'; text-align: center; font-size: 18px; margin-top: 10px;
+    }
+
+    #iconblock {
+      text-align: center;
+    }
 
     .col-md-4 p {
-        font-family: 'Crimson Text', sans-serif; font-size: 1.25em; margin-bottom: 10px;
+        font-family: 'Crimson Text'; text-align: center; font-size: 1.25em; margin-bottom: 10px;
     }
 
     .about-paragraph p {
