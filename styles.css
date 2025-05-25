@@ -1,7 +1,7 @@
 <style>
 
     .container h1, h2, h3, h4, h5, h6 {
-        font-family: 'Crimson Text';
+        font-family: 'EB Garamond';
     }
     
     #personalPhoto {
@@ -9,7 +9,7 @@
     }
 
     #myName {
-      font-family: 'Crimson Text'; text-align: center; font-size: 18px; margin-top: 10px;
+      font-family: 'EB Garamond'; text-align: center; font-size: 18px; margin-top: 10px;
     }
 
     #iconblock {
@@ -17,15 +17,15 @@
     }
 
     .col-md-4 p {
-        font-family: 'Crimson Text'; text-align: center; font-size: 1.25em; margin-bottom: 10px;
+        font-family: 'EB Garamond'; text-align: center; font-size: 1.25em; margin-bottom: 10px;
     }
 
     .about-paragraph p {
-        font-family: 'Crimson Text'; font-size: 1.25em; margin-bottom: 10px;
+        font-family: 'EB Garamond'; font-size: 1.25em; margin-bottom: 10px;
     }
 
     .publication-list li {
-      font-family: 'Crimson Text'; font-size: 1.25em;
+      font-family: 'EB Garamond'; font-size: 1.25em;
       margin-bottom: 10px;
       padding: 10px;
       border-radius: 5px;
